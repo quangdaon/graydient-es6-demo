@@ -1,9 +1,8 @@
-const doof = 'goof';
+//import './demos/const-let';
+//import './demos/arrow-shorthands';
+//import './demos/destructuring';
+//import './demos/rest';
+//import './demos/class';
 
-console.log(doof);
-
-function callMom() {
-	console.log('hello?');
-}
-
-//callMom();
+//import './demos/imports';
+//import './demos/imports2';

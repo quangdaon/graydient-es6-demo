@@ -35,7 +35,7 @@ gulp.task('scripts', function () {
 					presets: ['es2015-rollup']
 				})
 			]
-		}, 'iife'))
+		}, 'cjs'))
 		.pipe(rename('main.js'));
 
 	if (!debug) {
