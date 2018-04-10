@@ -10,6 +10,7 @@ const babel = require('rollup-plugin-babel');
 const resolve = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
 const replace = require('rollup-plugin-replace');
+const json = require('rollup-plugin-json');
 const async = require('rollup-plugin-async');
 
 const debug = process.env.NODE_ENV !== 'production';
@@ -29,6 +30,7 @@ gulp.task('scripts', function () {
 				}, replacements)),
 				resolve({ browser: true }),
 				commonjs(),
+				json(),
 				babel({
 					exclude: 'node_modules/**',
 					babelrc: false,
@@ -68,7 +70,7 @@ gulp.task('styles', function () {
 			}));
 	}
 
-	gulpStyles.pipe(gulp.dest('dist/css'))
+	gulpStyles.pipe(gulp.dest('dist/css'));
 
 	if (debug) {
 		gulpStyles.pipe(browserSync.reload({

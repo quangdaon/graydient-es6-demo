@@ -4,5 +4,4 @@
 //import './demos/rest';
 //import './demos/class';
 
-//import './demos/imports';
-//import './demos/imports2';
+import './demos/imports';

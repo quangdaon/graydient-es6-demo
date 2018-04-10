@@ -11,14 +11,19 @@ const obj = {
 	c: 3
 };
 
-const { a } = obj;
+const { a, b: d } = obj;
 
-console.log(a);
+console.log(a, d);
 
 function fun({ a, b, c }) {
+	console.log(a);
 	console.log(b);
+	console.log(c);
 }
 
+const c = 'my-var';
+
 fun({
-	b: 'twenty-six'
+	b: 'twenty-six',
+	c
 });

@@ -1,3 +1,4 @@
+// Example of Class
 class Animal {
 	constructor(name) {
 		this.name = name;
@@ -12,6 +13,7 @@ class Animal {
 const igor = new Animal('Igor');
 igor.speak();
 
+// Example of extends
 class Dog extends Animal {
 	constructor(name) {
 		super(name);
